@@ -1,0 +1,85 @@
+{
+  "events": [
+    {
+      "start_date": {"year": "2010", "month": "7"},
+      "end_date": {"year": "2014", "month": "7"},
+      "media": {"url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/University_of_delhi_logo.png", "credit": ""},
+      "text": {
+        "headline": "Education: Bachelor of Technology in Biotechnology",
+        "text": "Completed Bachelor of Technology in Biotechnology at University School of Biotechnology."
+      }
+    },
+    {
+      "start_date": {"year": "2015", "month": "7"},
+      "end_date": {"year": "2018", "month": "7"},
+      "media": {"url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/1200px-IIT_Kharagpur_Logo.svg.png", "credit": ""},
+      "text": {
+        "headline": "Education: LL.B. in Intellectual Property Law",
+        "text": "Earned LL.B. with Honors in Intellectual Property Law from Indian Institute of Technology – Rajiv Gandhi School of Intellectual Property."
+      }
+    },
+    {
+      "start_date": {"year": "2018", "month": "6"},
+      "end_date": {"year": "2020", "month": "6"},
+      "media": {"url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/KPMG_logo.svg", "credit": ""},
+      "text": {
+        "headline": "Associate at KPMG India",
+        "text": "Managed intellectual property portfolio of over USD 1 billion, advised on patents and trademarks in USA, Europe, and India&#8203;"
+      }
+    },
+    {
+      "start_date": {"year": "2020", "month": "7"},
+      "end_date": {"year": "2021", "month": "6"},
+      "media": {"url": "https://emt.gartnerweb.com/ngw/globalassets/en/newsroom/images/covers/gartner-press-release-twitter-thumbnail.png", "credit": ""},
+      "text": {
+        "headline": "Senior Associate at Gartner India",
+        "text": "Developed patent filing strategies, managed client relationships, and conducted technology contract analysis&#8203;"
+      }
+    },
+    {
+      "start_date": {"year": "2021", "month": "7"},
+      "end_date": {"year": "2022", "month": "8"},
+      "media": {"url": "https://nylag.org/wp-content/uploads/2019/07/NYLAG_Logo_fullcolor_fullname_RGB.png", "credit": ""},
+      "text": {
+        "headline": "Volunteer at New York Legal Assistance Group and Garbo",
+        "text": "Contributed to immigration case management, supported asylum seekers, and wrote blogs on gender and social issues&#8203;"
+      }
+    },
+    {
+      "start_date": {"year": "2022", "month": "8"},
+      "end_date": {"year": "2023", "month": "5"},
+      "media": {"url": "https://www.fordham.edu/media/home/departments-centers-and-offices/marketing-and-communications/images/Fordham-Seal_300x300.png", "credit": ""},
+      "text": {
+        "headline": "LLM in IP Law at Fordham Law School & Research Assistant",
+        "text": "Pursued LLM in Intellectual Property & IT Law and worked as a Research Assistant at Fordham IP Institute&#8203;"
+      }
+    },
+    {
+      "start_date": {"year": "2022", "month": "8"},
+      "end_date": {"year": "2022", "month": "12"},
+      "media": {"url": "https://media.glassdoor.com/companyupdate/w900/9404/quest-software-companyupdate-1674247583145.png?signature=cc5ba1823dc729a77de92d3fcc37b5053255f819da7d6c05e73b60576775b7c1", "credit": ""},
+      "text": {
+        "headline": "Legal Intern at Quest Software, NYC",
+        "text": "Engaged in patentability analysis, infringement claim analysis, and patent prosecution strategy development&#8203;"
+      }
+    },
+    {
+      "start_date": {"year": "2023", "month": "7"},
+      "end_date": {"year": "2023", "month": "7"},
+      "media": {"url": "https://www.mycase.com/wp-content/uploads/2022/04/NewYorkStateBar-Logo_2-1.png", "credit": ""},
+      "text": {
+        "headline": "Cleared the New York Bar",
+        "text": "Successfully cleared the New York Bar Examination."
+      }
+    },
+    {
+      "start_date": {"year": "2023", "month": "8"},
+      "end_date": {"year": "2023", "month": "12"},
+      "media": {"url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE5WmZq-XWs1LrcQPCDKGE3D93exUjPUHrPYFH78-3B2cBGSQJvq1Ay4uCKJcMnEydQaE&usqp=CAU", "credit": ""},
+      "text": {
+        "headline": "Litigation Associate at Lynn Gartner Dunne & Frigenti LLP, New York",
+        "text": "Negotiated out-of-court settlements, drafted legal documents, and led IP due diligence for strategic acquisitions&#8203;"
+      }
+    }
+  ]
+}
