@@ -100,10 +100,10 @@ query_engine = index.as_query_engine(text_qa_template=qa_template)
 
 
 # Create the text input widget with a placeholder
-st.markdown(“<h4 style=’text-align: Left; color: White;’>I am an AI-enabled search bar, and can assist you with questions about Nandini</h4>“, unsafe_allow_html=True)
+st.markdown("<h4 style=’text-align: Left; color: White;’>I am an AI-enabled search bar, and can assist you with questions about Nandini</h4>", unsafe_allow_html=True)
 
-user_input = st.text_input(“Enter your question here: “,
-                           placeholder=“For example: Provide me bullet points of Nandini’s experience in IP Law”)
+user_input = st.text_input("Enter your question here: ",
+                           placeholder="For example: Provide me bullet points of Nandini’s experience in IP Law")
 try:
     answer = query_engine.query(user_input).response
 
