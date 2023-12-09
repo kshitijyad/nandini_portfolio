@@ -3,7 +3,7 @@ info = {
    "Name": "Nandini",
    "Full_Name": "Nandini Comar",
    "Intro": "New York Registered Lawyer, with experince in Intellectual Property, Trademark, Contracts and Patents",
-   "About":"Hey there, I'm Nandini! I'm passionate about leveraging data and technology to drive meaningful insights and solutions in business.",
+   "About":"Hey there, I’m Nandini Comar, a seasoned Intellectual Property (IP) Lawyer specializing in Intellectual Property , Trademarks, contract compliance, patent advisory, and open-source licensing.",
    "City":"New York, United States",
    "Email": "comarnan@gmail.com"
 }
