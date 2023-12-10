@@ -108,7 +108,6 @@ qa_template = Prompt(template)
 query_engine = index.as_query_engine(text_qa_template=qa_template)
 
 # Function to handle the query and display the answer
-# Function to handle the query and display the answer
 def handle_query(query):
     with st.spinner('🔍 Analyzing Nandini’s expertise... 📚 Please hold on a moment! 💫'):
         try:
@@ -134,7 +133,9 @@ def handle_query(query):
         except Exception as e:
             st.error("An error occurred: " + str(e))
 
-
+def reset_button_click_state():
+    st.session_state.button_clicked = False
+    
 # Predefined questions
 questions = [
     "What are Nandini's key achievements in her legal career?",
@@ -143,6 +144,9 @@ questions = [
     "How has Nandini demonstrated professional growth throughout her career, and what are her long-term career aspirations?"
 ]
 
+if 'button_clicked' not in st.session_state:
+    st.session_state.button_clicked = False
+    
 st.markdown('<br>', unsafe_allow_html=True)
 
 st.markdown("""
@@ -164,21 +168,20 @@ user_input = st.text_input("", placeholder="🧙🏻‍♂️: I am an AI-enable
 
 st.markdown('<br> 🖋️ Or, **Simply click** these questions below 👇 ', unsafe_allow_html=True)
 
-# Display buttons for predefined questions side by side
+# Display buttons for predefined questions
 cols = st.columns(2)  # Create two columns
 for idx, question in enumerate(questions):
     if cols[idx % 2].button(question, key=f'btn{idx}'):
         user_input = question
+        st.session_state.button_clicked = True
         handle_query(user_input)
-        
-# Text input for user questions
-
-
 
 # Handle the user's input if they type a question and press Enter
-if user_input and not st.session_state.get('button_clicked', False):
+if user_input and not st.session_state.button_clicked:
     handle_query(user_input)
 
+# Reset the button click state at the end of the session
+reset_button_click_state()
 st.divider()
 # ----------------- skillset ----------------- #
 
