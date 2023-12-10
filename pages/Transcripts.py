@@ -37,4 +37,4 @@ st.header("Masters: LLM - Fordham Law Transcripts")
 create_download_button("data/fordham_transcripts.pdf", "Download Fordham Transcripts")
 
 st.header("Bachelors: LLb - IIT Khargapur Transcripts")
-create_download_button("data/IIT KGP Transcripts (1).pdf", "Download IIT Transcripts")
+create_download_button("data/IIT KGP Transcripts (1).pdf","Download IIT Transcripts")
