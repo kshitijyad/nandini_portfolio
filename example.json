@@ -65,7 +65,7 @@
     },
     {
       "start_date": {"year": "2023", "month": "7"},
-      "end_date": {"year": "2023", "month": "7"},
+      
       "media": {"url": "https://www.mycase.com/wp-content/uploads/2022/04/NewYorkStateBar-Logo_2-1.png", "credit": ""},
       "text": {
         "headline": "Cleared the New York Bar",
@@ -74,7 +74,6 @@
     },
     {
       "start_date": {"year": "2023", "month": "8"},
-      "end_date": {"year": "2023", "month": "12"},
       "media": {"url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE5WmZq-XWs1LrcQPCDKGE3D93exUjPUHrPYFH78-3B2cBGSQJvq1Ay4uCKJcMnEydQaE&usqp=CAU", "credit": ""},
       "text": {
         "headline": "Litigation Associate at Lynn Gartner Dunne & Frigenti LLP, New York",

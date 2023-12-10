@@ -183,14 +183,18 @@ with st.container():
     
     
 # ----------------- timeline ----------------- #
-st.subheader('Career snapshot')
+import json
 
+st.subheader('Career Snapshot')
 
-    
-with st.spinner(text="Building line"):
-    with open('example.json', "r") as f:
-        data = f.read()
-        timeline(data, height=500)
+with open('example.json', "r") as f:
+    data = json.load(f)
+
+# Reversing the order of events
+data['events'].reverse()
+
+with st.spinner(text="Building Timeline"):
+    timeline(json.dumps(data), height=500)
 
 
 # -----------------  endorsement  ----------------- #
