@@ -54,20 +54,26 @@ local_css("style/style.css")
 
 
 # ----------------- info ----------------- #
+full_name = info['Full_Name']
+
 def gradient(color1, color2, color3, content1, content2):
-    st.markdown(f'<h1 style="text-align:center;background-image: linear-gradient(to right,{color1}, {color2});font-size:60px;border-radius:2%;">'
-                f'<span style="color:{color3};">{content1}</span><br>'
-                f'<span style="color:white;font-size:17px;">{content2}</span></h1>', 
-                unsafe_allow_html=True)
+    st.markdown(f"""
+    <h1 style="text-align:center; background-image: linear-gradient(to right, {color1}, {color2}); font-size:60px; border-radius:2%; box-shadow: 0px 2px 5px rgba(0,0,0,0.2);">
+        <span style="color:{color3};">{content1}</span><br>
+        <span style="color:white; font-size:18px;">{content2}</span>
+    </h1>
+    """, unsafe_allow_html=True)
+
+# Gradient header outside of columns for full width
+gradient('#FFD4DD','#000395','e0fbfc',f"Hi, I'm {full_name}👋", info["Intro"])
 
 with st.container():
-    col1,col2 = st.columns([8,3])
 
-full_name = info['Full_Name']
-with col1:
-    gradient('#FFD4DD','#000395','e0fbfc',f"Hi, I'm {full_name}👋", info["Intro"])
-    st.write("")
-    st.write(info['About'])     
+    st.markdown(f"""
+        <div style="font-size:18px; line-height: 1.6; ">
+            <br> {info['About']}
+        </div>
+    """, unsafe_allow_html=True)     
     
 # ----------------- Llama ----------------- #
 openai.api_key = st.secrets["OPENAI_API_KEY"]
@@ -137,8 +143,26 @@ questions = [
     "How has Nandini demonstrated professional growth throughout her career, and what are her long-term career aspirations?"
 ]
 
-st.markdown("<h4 style='text-align: Left; color: White;'>I am an AI-enabled search bar, and can assist you with questions about Nandini</h4>", unsafe_allow_html=True)
+st.markdown('<br>', unsafe_allow_html=True)
 
+st.markdown("""
+    <style>
+        /* Targeting the text input widget */
+        .stTextInput > div > div > input {
+            color: black; /* Text color */
+            background-color: white; /* Background color */
+            padding: 10px; /* Padding */
+            border-radius: 10px; /* Rounded corners */
+            border: 1px solid #ccc; /* Border color and width */
+        }
+    </style>
+""", unsafe_allow_html=True)
+st.divider()
+# Text input for user questions
+st.subheader("**You can know more about Nandini, by entering your questions here:**")
+user_input = st.text_input("", placeholder="🧙🏻‍♂️: I am an AI-enabled search bar, and can assist you with questions about Nandini")
+
+st.markdown('<br> 🖋️ Or, **Simply click** these questions below 👇 ', unsafe_allow_html=True)
 
 # Display buttons for predefined questions side by side
 cols = st.columns(2)  # Create two columns
@@ -148,14 +172,14 @@ for idx, question in enumerate(questions):
         handle_query(user_input)
         
 # Text input for user questions
-user_input = st.text_input("Enter your question here: ", placeholder="For example: Provide me bullet points of Nandini’s experience in IP Law")
+
+
 
 # Handle the user's input if they type a question and press Enter
 if user_input and not st.session_state.get('button_clicked', False):
     handle_query(user_input)
 
-
-
+st.divider()
 # ----------------- skillset ----------------- #
 
 
@@ -181,7 +205,7 @@ with st.container():
         st.markdown('<i class="fa fa-users" aria-hidden="true"></i> Cross-functional Collaboration', unsafe_allow_html=True)
 
     
-    
+st.divider()    
 # ----------------- timeline ----------------- #
 import json
 
@@ -196,7 +220,7 @@ data['events'].reverse()
 with st.spinner(text="Building Timeline"):
     timeline(json.dumps(data), height=500)
 
-
+st.divider()
 # -----------------  endorsement  ----------------- #
 st.subheader("👄 Coworker Endorsements")
 # Embed an HTML component to display the slideshow
@@ -301,23 +325,31 @@ height=270,
 
 import streamlit as st
 
-with st.container():
-    col1, col2, col3 = st.columns(3)
+with st.sidebar.container():
+    st.divider()
 
+    col1, col2, col3 = st.columns(3)
+    st.markdown(" ")
     # LinkedIn Icon
+    st.markdown("""
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    """, unsafe_allow_html=True)
     with col1:
         st.markdown(
-            """<a href="https://www.linkedin.com/in/nandinicomar/" target="_blank">
-                   <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn">
+            """<a href="https://www.linkedin.com/in/kshitijyad/" target="_blank">
+                   <i class="fa-brands fa-linkedin fa-beat fa-2x" style="color: #ff0000;"></i>
                </a>""",
             unsafe_allow_html=True
         )
 
+    st.markdown("""
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    """, unsafe_allow_html=True)
     # Email Icon
     with col2:
         st.markdown(
-            """<a href="mailto:comarnan@gmail.com">
-                   <img src="https://img.icons8.com/fluent/48/000000/gmail.png" alt="Email">
+            """<a href="mailto:kshitijyad@gmail.com">
+                   <i class="fa-regular fa-envelope fa-beat fa-2x" style="color: #000000;"></i>
                </a>""",
             unsafe_allow_html=True
         )
@@ -325,8 +357,8 @@ with st.container():
     # Phone Icon
     with col3:
         st.markdown(
-            """<a href="tel:+1.201.620.1544">
-                   <img src="https://img.icons8.com/fluent/48/000000/phone.png" alt="Phone">
+            """<a href="tel:+1.916.793.9923">
+                   <i class="fa-solid fa-phone fa-beat fa-2x" style="color: #fff700;"></i>
                </a>""",
             unsafe_allow_html=True
         )
