@@ -34,7 +34,7 @@ def create_download_button(pdf_file_path, button_text):
 
 # Display download links for the transcripts
 st.header("Masters: LLM - Fordham Law Transcripts")
-create_download_button("data/data/Fordham LLM Transcript.pdf", "Download Fordham Transcripts")
+create_download_button("data/Fordham LLM Transcript.pdf", "Download Fordham Transcripts")
 
 st.header("Bachelors: LLb - IIT Khargapur Transcripts")
 create_download_button("data/IIT KGP Transcripts (1).pdf","Download IIT Transcripts")
