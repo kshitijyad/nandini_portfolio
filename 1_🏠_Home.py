@@ -92,6 +92,7 @@ template = (
         
         You will list part 1 -  Can you elaborate on Nandini's specialization in intellectual property law
         and part 2 - how she has applied it in her past roles
+        8. Highlight important words in your response 
         
         and add answer below these
         {query_str}\n'''
