@@ -89,3 +89,25 @@ a:hover, a:active {
     border-radius: 5px; /* Rounded corners for the box */
     border: 1px solid #ccc; /* Light grey border for the box */
 }
+
+/* Responsive Design for Mobile Devices */
+@media only screen and (max-width: 768px) {
+    .stTextInput > div > div > input, input[type=message], input[type=email], input[type=text], textarea {
+        width: 100%; /* Full width on smaller screens */
+        padding: 8px; /* Smaller padding */
+    }
+
+    [data-testid=stSidebar] {
+        width: 80%; /* Adjust width of sidebar for mobile view */
+    }
+
+    /* Additional mobile adjustments */
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: #F5F5F5; /* Set a default background color for better readability */
+    }
+
+    /* Further adjustments for smaller screens */
+}
