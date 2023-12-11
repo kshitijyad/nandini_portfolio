@@ -339,7 +339,7 @@ with st.sidebar.container():
     """, unsafe_allow_html=True)
     with col1:
         st.markdown(
-            """<a href="https://www.linkedin.com/in/kshitijyad/" target="_blank">
+            """<a href="https://www.linkedin.com/in/nandinicomar/" target="_blank">
                    <i class="fa-brands fa-linkedin fa-beat fa-2x" style="color: #ff0000;"></i>
                </a>""",
             unsafe_allow_html=True
@@ -351,7 +351,7 @@ with st.sidebar.container():
     # Email Icon
     with col2:
         st.markdown(
-            """<a href="mailto:kshitijyad@gmail.com">
+            """<a href="mailto:comarnan@gmail.com">
                    <i class="fa-regular fa-envelope fa-beat fa-2x" style="color: #000000;"></i>
                </a>""",
             unsafe_allow_html=True
@@ -360,7 +360,7 @@ with st.sidebar.container():
     # Phone Icon
     with col3:
         st.markdown(
-            """<a href="tel:+1.916.793.9923">
+            """<a href="tel:+1.201.620.1544">
                    <i class="fa-solid fa-phone fa-beat fa-2x" style="color: #fff700;"></i>
                </a>""",
             unsafe_allow_html=True
