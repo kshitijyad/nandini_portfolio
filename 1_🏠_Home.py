@@ -58,14 +58,16 @@ full_name = info['Full_Name']
 
 def gradient(color1, color2, color3, content1, content2):
     st.markdown(f"""
-    <h1 style="text-align:center; background-image: linear-gradient(to right, {color1}, {color2}); font-size:60px; border-radius:2%; box-shadow: 0px 2px 5px rgba(0,0,0,0.2);">
-        <span style="color:{color3};">{content1}</span><br>
-        <span style="color:white; font-size:18px;">{content2}</span>
+    <h1 style="text-align:center; background-image: linear-gradient(to right, {color1}, {color2}); 
+                font-size:60px; border-radius:2%; box-shadow: 0px 2px 5px rgba(0,0,0,0.2); color:{color3};">
+        <span style="text-shadow: 2px 2px 4px rgba(0,0,0,0.4);">{content1}</span><br>
+        <span style="color:white; font-size:18px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">{content2}</span>
     </h1>
     """, unsafe_allow_html=True)
 
-# Gradient header outside of columns for full width
-gradient('#FFD4DD','#000395','e0fbfc',f"Hi, I'm {full_name}👋", info["Intro"])
+# Updated colors for better contrast
+gradient('#4A90E2', '#E8F1F2', 'white', f"Hi, I'm {full_name}👋", info["Intro"])
+
 
 with st.container():
 
@@ -151,16 +153,16 @@ st.markdown('<br>', unsafe_allow_html=True)
 
 st.markdown("""
     <style>
-        /* Targeting the text input widget */
         .stTextInput > div > div > input {
-            color: black; /* Text color */
-            background-color: white; /* Background color */
-            padding: 10px; /* Padding */
-            border-radius: 10px; /* Rounded corners */
-            border: 1px solid #ccc; /* Border color and width */
+            color: black;
+            background-color: #f2f2f2;  /* Softer background for input */
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
         }
     </style>
 """, unsafe_allow_html=True)
+
 st.divider()
 # Text input for user questions
 st.subheader("**You can know more about Nandini, by entering your questions here:**")
