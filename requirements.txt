@@ -8,3 +8,5 @@ llama-cpp-python==0.1.9
 sentence_transformers
 langchain
 pypdf
+langchain-community 
+langchain-core
