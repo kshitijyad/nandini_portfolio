@@ -18,7 +18,39 @@ html_code = f"""
 
 # Display the clickable image in the sidebar
 st.sidebar.markdown(html_code, unsafe_allow_html=True)
+def apply_custom_css():
+    st.markdown("""
+    <style>
+    /* Existing styles... */
 
+    /* Sidebar specific styles */
+    [data-testid="stSidebar"] {
+        background-color: #4B0082;  /* Dark purple background */
+    }
+
+    [data-testid="stSidebar"] .stMarkdown, 
+    [data-testid="stSidebar"] .stMarkdown p,
+    [data-testid="stSidebar"] a {
+        color: #FFFFFF !important;  /* White text for better contrast */
+        font-weight: 500;  /* Slightly bolder text */
+    }
+
+    [data-testid="stSidebar"] a:hover {
+        color: #FFD700 !important;  /* Gold color on hover for links */
+        text-decoration: underline;
+    }
+
+    /* Style for the main content area */
+    .main .stMarkdown, .main .stMarkdown p {
+        color: #333333 !important;  /* Dark gray for main content text */
+    }
+
+    /* Rest of your existing styles... */
+    </style>
+    """, unsafe_allow_html=True)
+
+# Apply the custom CSS
+apply_custom_css()
 st.title("Transcripts 🗄️")
 
 def local_css(file_name):
