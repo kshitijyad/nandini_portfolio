@@ -413,7 +413,9 @@ st.markdown("""
 st.divider()
 # Text input for user questions
 st.subheader("**You can know more about Nandini, by entering your questions here:**")
-user_input = st.text_input("", placeholder="🧙🏻‍♂️: I am an AI-enabled search bar, and can assist you with questions about Nandini")
+user_input = st.text_input("Ask a question about Nandini", 
+                           placeholder="🧙🏻‍♂️: I am an AI-enabled search bar, and can assist you with questions about Nandini",
+                           label_visibility="collapsed")  # This hides the label but keeps accessibility intact
 
 st.markdown(' 🖋️ Or, **Simply click** these questions below 👇 ', unsafe_allow_html = True)
 
